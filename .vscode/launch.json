@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch CardatabaseApplication",
+            "request": "launch",
+            "mainClass": "com.packt.cardatabase.CardatabaseApplication",
+            "projectName": "cardatabase",
+            "vmArgs": "-javaagent:apm/wrapper/elastic-apm-agent-1.33.0.jar -Delastic.apm.service_name=cardatabase -Delastic.apm.application_packages=com.packt.cardatabase -Delastic.apm.server_urls=https://0ad4a0b4a15c448fa69865ae327ce844.apm.europe-west2.gcp.elastic-cloud.com:443 -Delastic.apm.secret_token=vY3aSwD5wsi0uXbIuX"
+        }
+    ]
+}
